@@ -139,16 +139,28 @@ sudo systemctl disable go-stress-test
 ---
 
 #### **启动运行服务和自动重启服务**
+```bash
 sudo systemctl start go-stress-test.timer
+```
+```bash
 sudo systemctl start go-stress-test.service
+```
 
 #### **停止运行服务和自动重启服务**
+```bash
 sudo systemctl stop go-stress-test.timer
+```
+```bash
 sudo systemctl stop go-stress-test.service
+```
 
 #### **运行服务和自动重启服务状态检查**
+```bash
 sudo systemctl status go-stress-test.timer
+```
+```bash
 sudo systemctl status go-stress-test.service
+```
 
 
 

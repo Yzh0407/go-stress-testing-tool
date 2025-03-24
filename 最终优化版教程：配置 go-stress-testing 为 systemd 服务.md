@@ -138,6 +138,21 @@ sudo systemctl disable go-stress-test
 
 ---
 
+#### **启动运行服务和自动重启服务**
+sudo systemctl start go-stress-test.timer
+sudo systemctl start go-stress-test.service
+
+#### **停止运行服务和自动重启服务**
+sudo systemctl stop go-stress-test.timer
+sudo systemctl stop go-stress-test.service
+
+#### **运行服务和自动重启服务状态检查**
+sudo systemctl status go-stress-test.timer
+sudo systemctl status go-stress-test.service
+
+
+
+
 ### **8. 总结**
 通过本教程，你已经将 `go-stress-testing` 配置为一个 **持久化运行的 systemd 服务**，具备以下特性：
 • **断线无视**：即使 SSH 断开，服务仍继续运行。
